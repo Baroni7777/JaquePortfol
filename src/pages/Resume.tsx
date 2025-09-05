@@ -176,7 +176,7 @@ const Resume = () => {
             <section>
               <h2 className="text-xl font-bold text-gray-700 mb-6 flex items-center justify-between">
                 SKILLS
-                <span className="text-gray-400 font-mono text-lg">04</span>
+                <span className="text-gray-400 font-mono text-lg">05</span>
               </h2>
               <div className="space-y-4">
                 {skills.map((skill, i) => (
