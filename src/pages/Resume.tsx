@@ -86,11 +86,12 @@ const Resume = () => {
                 EXPERIÊNCIAS PROFISSIONAIS
                 <span className="text-gray-400 font-mono text-lg">01</span>
               </h2>
-              <div className="relative">
-                <div className="absolute left-5 top-2 bottom-2 w-0.5 bg-pink-200 -z-10"></div>
+              <div className="relative pl-8">
+                <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-pink-200"></div>
+                <div className="absolute left-[-0.3rem] top-1 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
+                <div className="absolute left-[-0.3rem] bottom-1 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
                 {experiences.map((exp, index) => (
-                  <div key={index} className="relative pl-12 mb-8">
-                    <div className="absolute left-[1.1rem] top-2 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
+                  <div key={index} className="mb-8 last:mb-0">
                     <div className="flex items-baseline gap-4">
                       <Badge className="bg-pink-400 text-white whitespace-nowrap">{exp.year}</Badge>
                       <div>
@@ -154,14 +155,21 @@ const Resume = () => {
                 EDUCAÇÃO
                 <span className="text-gray-400 font-mono text-lg">03</span>
               </h2>
-              <div className="relative pl-8">
-                 <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-pink-200"></div>
-                 <div className="absolute left-[-0.3rem] top-1 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
-                 <div className="absolute left-[-0.3rem] bottom-1 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
-                 <h3 className="font-bold text-gray-800">UniSALESIANO - Centro</h3>
-                 <p className="text-gray-600">Universitário Católico Salesiano</p>
-                 <p className="text-gray-600">Auxilium - Nutrição</p>
-                 <p className="text-gray-500 text-sm mt-1">2016-2019</p>
+              <div className="relative">
+                <div className="absolute left-5 top-2 bottom-2 w-0.5 bg-pink-200 -z-10"></div>
+                <div className="relative pl-12">
+                  <div className="absolute left-[1.1rem] top-2 w-3 h-3 bg-pink-400 rounded-full border-2 border-white"></div>
+                  <div className="flex items-baseline gap-4">
+                    <Badge className="bg-pink-400 text-white whitespace-nowrap">2016-2019</Badge>
+                    <div>
+                      <h3 className="font-bold text-md text-gray-800">UniSALESIANO - Centro</h3>
+                      <p className="text-gray-500 text-sm">Universitário Católico Salesiano</p>
+                    </div>
+                  </div>
+                  <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1 text-sm">
+                    <li>Auxilium - Nutrição</li>
+                  </ul>
+                </div>
               </div>
             </section>
 
