@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Mail, Globe, Info } from "lucide-react";
+import { Mail, Globe, Info, Instagram } from "lucide-react";
 
 // Nota: Estou usando uma imagem de placeholder. Você pode substituí-la pelo URL da imagem real.
 const profileImage = "https://ladyjaque.github.io/portfolio/JaquelineBastos/assets/foto.jpg";
@@ -82,6 +82,11 @@ const Resume = () => {
               <a href="http://www.jaquebastos.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-blue-500">
                 <Globe size={16} />
                 <span>www.jaquebastos.com</span>
+              </a>
+              <span className="hidden sm:inline text-gray-300">|</span>
+              <a href="https://www.instagram.com/jaqueebastos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-blue-500">
+                <Instagram size={16} />
+                <span>@jaqueebastos</span>
               </a>
             </div>
             <p className="mt-4 text-gray-600 max-w-2xl">
