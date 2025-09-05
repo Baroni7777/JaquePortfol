@@ -84,7 +84,7 @@ const Resume = () => {
             <section>
               <h2 className="text-xl font-bold text-gray-700 mb-6 flex items-center justify-between">
                 EXPERIÊNCIAS PROFISSIONAIS
-                <span className="text-gray-400 font-mono text-lg">01</span>
+                <span className="text-gray-400 font-mono text-lg">03</span>
               </h2>
               <div className="relative pl-8">
                 <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-pink-200"></div>
@@ -130,7 +130,7 @@ const Resume = () => {
             <section>
               <h2 className="text-xl font-bold text-gray-700 mb-6 flex items-center justify-between">
                 SKILLS & EXPERTISE
-                <span className="text-gray-400 font-mono text-lg">02</span>
+                <span className="text-gray-400 font-mono text-lg">05</span>
               </h2>
               <ul className="space-y-4">
                 {expertiseItems.map((item, i) => (
