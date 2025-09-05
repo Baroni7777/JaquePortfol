@@ -49,6 +49,17 @@ const skills = [
     { name: "Informática", level: "w-[60%]" },
 ];
 
+const whatIDoItems = [
+  { emoji: "🎨", title: "Design Gráfico & Identidade Visual", description: "Criação de soluções visuais estratégicas para marcas e eventos" },
+  { emoji: "🖌", title: "Adobe Photoshop & Edição Digital", description: "Especialista em manipulação de imagens e aprimoramento de design" },
+  { emoji: "📊", title: "Gestão Empresarial & de Projetos", description: "Organização eficiente e otimização de processos" },
+  { emoji: "📱", title: "Mídias Sociais & Criação de Conteúdo", description: "Conhecimento em marketing digital e comunicação de marca" },
+  { emoji: "💡", title: "Resolução de Problemas & Adaptabilidade", description: "Aprendizado rápido e facilidade para novos desafios" },
+  { emoji: "🤝", title: "Trabalho em Equipe & Comunicação", description: "Habilidades interpessoais fortes e colaboração eficaz" },
+  { emoji: "📂", title: "Pacote Office (Excel, Word, PowerPoint)", description: "Gestão de dados, relatórios e apresentações profissionais" },
+  { emoji: "📈", title: "Pensamento Analítico & Estratégico", description: "Capacidade de avaliar necessidades, propor soluções e melhorar processos" }
+];
+
 const Resume = () => {
   return (
     <div className="p-4 sm:p-8 md:p-12 min-h-screen font-sans">
@@ -124,6 +135,23 @@ const Resume = () => {
                     </div>
                 </div>
             </footer>
+
+            <section className="mt-12">
+              <h2 className="text-xl font-bold text-gray-700 mb-6">
+                O QUE EU FAÇO
+              </h2>
+              <ul className="space-y-4">
+                {whatIDoItems.map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-2xl mt-[-2px]">{item.emoji}</span>
+                    <div>
+                      <h4 className="font-bold text-gray-800">{item.title}</h4>
+                      <p className="text-gray-600 text-sm">{item.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
           </div>
 
           <div className="md:col-span-1 space-y-12">
