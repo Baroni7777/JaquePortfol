@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Mail, Globe, Info } from "lucide-react";
 
 // Nota: Estou usando uma imagem de placeholder. Você pode substituí-la pelo URL da imagem real.
-const profileImage = "https://ladyjaque.github.io/portfolio/JaquelineBastos/assets/foto.jpg";
+const profileImage = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 const experiences = [
   {
@@ -183,6 +183,24 @@ const Resume = () => {
             </section>
           </div>
         </main>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-bold text-center text-purple-700 mb-8">
+            Alguns dos meus trabalhos
+          </h2>
+          <div className="space-y-8">
+            <div className="bg-white p-6 rounded-xl border border-gray-200">
+              <img src="https://ladyjaque.github.io/portfolio/JaquelineBastos/assets/trabalho1.jpg" alt="Trabalho 1" className="w-full h-auto rounded-lg" />
+            </div>
+            <div className="bg-pink-100 p-6 rounded-xl">
+              <img src="https://ladyjaque.github.io/portfolio/JaquelineBastos/assets/trabalho2.jpg" alt="Trabalho 2" className="w-full h-auto rounded-lg" />
+            </div>
+            <div className="bg-pink-100 p-6 rounded-xl">
+              <img src="https://ladyjaque.github.io/portfolio/JaquelineBastos/assets/trabalho3.jpg" alt="Trabalho 3" className="w-full h-auto rounded-lg" />
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
   );
