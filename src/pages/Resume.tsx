@@ -186,7 +186,7 @@ const Resume = () => {
             <section>
               <h2 className="text-xl font-bold text-gray-700 mb-6 flex items-center justify-between">
                 EDUCAÇÃO
-                <span className="text-gray-400 font-mono text-lg">03</span>
+                <span className="text-gray-400 font-mono text-lg">02</span>
               </h2>
               <div className="relative">
                 <div className="absolute left-5 top-2 bottom-2 w-0.5 bg-pink-200 -z-10"></div>
